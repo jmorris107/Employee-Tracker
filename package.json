@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/jmorris107/Employee-Tracker#readme",
   "dependencies": {
+    "console.table": "^0.10.0",
     "inquirer": "^7.3.3",
-    "mysql": "^2.18.1"
+    "msql": "^1.0.3",
+    "mysql": "^2.18.1",
+    "start": "^5.1.0"
   }
 }
