@@ -16,8 +16,9 @@
   📝 Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as Content Management Systems. In this application, my challenge is to architect and build a solution for managing a company's employees using node, inquirer, and MySQL.
  
 <p>
-<a href="https://youtu.be/-Ppu15HnsMo" rel="nofollow"><g-emoji class="g-emoji" alias="video_camera" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f9.png">📹</g-emoji>Full video for the functional demonstration of the application is here.</a>
+<a href="https://youtu.be/OyQSR-92QIg" rel="nofollow"><g-emoji class="g-emoji" alias="video_camera" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4f9.png">📹</g-emoji>Full video for the functional demonstration of the application is here.</a>
 
+![README Generator](Assets/employee-tracker.gif) 
   # Table of Contents
   - [Description](#description)
   - [Usage](#usage)
