@@ -95,7 +95,7 @@ function viewEmployee() {
     if (err) throw err;
 
     console.table(res);
-    console.log("Employees viewed!\n");
+    console.log("Employees viewed.\n");
 
     firstPrompt();
   });
@@ -125,7 +125,7 @@ function viewEmployeeByDepartment() {
     }));
 
     console.table(res);
-    console.log("Department view succeed!\n");
+    console.log("Department viewed.\n");
 
     promptDepartment(departmentChoices);
   });
@@ -141,7 +141,7 @@ function promptDepartment(departmentChoices) {
       {
         type: "list",
         name: "departmentId",
-        message: "Which department would you choose?",
+        message: "Choose department.",
         choices: departmentChoices
       }
     ])
@@ -161,23 +161,23 @@ function promptDepartment(departmentChoices) {
         if (err) throw err;
 
         console.table("response ", res);
-        console.log(res.affectedRows + "Employees are viewed!\n");
+        console.log(res.affectedRows + "Employees are viewed.\n");
 
         firstPrompt();
       });
     });
 }
 
-//========================================= 3."View Employees by Manager"
+//===== 3."View Employees by Manager"
 
 
 
-//========================================= 4."Add Employee" / CREATE: INSERT INTO
+//===4."Add Employee" / CREATE: INSERT INTO
 
 // Make a employee array
 
 function addEmployee() {
-  console.log("Inserting an employee!")
+  console.log("The employee inserted.")
 
   var query =
     `SELECT r.id, r.title, r.salary 
@@ -191,7 +191,7 @@ function addEmployee() {
     }));
 
     console.table(res);
-    console.log("RoleToInsert!");
+    console.log("RoleToInserted.");
 
     promptInsert(roleChoices);
   });
@@ -204,17 +204,17 @@ function promptInsert(roleChoices) {
       {
         type: "input",
         name: "first_name",
-        message: "What is the employee's first name?"
+        message: "Input employee's first name."
       },
       {
         type: "input",
         name: "last_name",
-        message: "What is the employee's last name?"
+        message: "Input employee's last name."
       },
       {
         type: "list",
         name: "roleId",
-        message: "What is the employee's role?",
+        message: "Choose the employee's role.",
         choices: roleChoices
       },
       // {
@@ -240,7 +240,7 @@ function promptInsert(roleChoices) {
           if (err) throw err;
 
           console.table(res);
-          console.log(res.insertedRows + "Inserted successfully!\n");
+          console.log(res.insertedRows + "Inserted successfully.\n");
 
           firstPrompt();
         });
@@ -248,7 +248,7 @@ function promptInsert(roleChoices) {
     });
 }
 
-//========================================= 5."Remove Employees" / DELETE, DELETE FROM
+//========5."Remove Employees" / DELETE, DELETE FROM
 
 // Make a employee array to delete
 
@@ -267,7 +267,7 @@ function removeEmployees() {
     }));
 
     console.table(res);
-    console.log("ArrayToDelete!\n");
+    console.log("ArrayToDelete.\n");
 
     promptDelete(deleteEmployeeChoices);
   });
@@ -282,7 +282,7 @@ function promptDelete(deleteEmployeeChoices) {
       {
         type: "list",
         name: "employeeId",
-        message: "Which employee do you want to remove?",
+        message: "Choose employee you would like to remove.",
         choices: deleteEmployeeChoices
       }
     ])
@@ -294,7 +294,7 @@ function promptDelete(deleteEmployeeChoices) {
         if (err) throw err;
 
         console.table(res);
-        console.log(res.affectedRows + "Deleted!\n");
+        console.log(res.affectedRows + "Deleted.\n");
 
         firstPrompt();
       });
@@ -302,7 +302,7 @@ function promptDelete(deleteEmployeeChoices) {
     });
 }
 
-//========================================= 6."Update Employee Role" / UPDATE,
+//====== 6."Update Employee Role" / UPDATE,
 
 function updateEmployeeRole() { 
   employeeArray();
@@ -330,7 +330,7 @@ function employeeArray() {
     }));
 
     console.table(res);
-    console.log("employeeArray To Update!\n")
+    console.log("employeeArray To Update.\n")
 
     roleArray(employeeChoices);
   });
@@ -352,7 +352,7 @@ function roleArray(employeeChoices) {
     }));
 
     console.table(res);
-    console.log("roleArray to Update!\n")
+    console.log("roleArray to Update.\n")
 
     promptEmployeeRole(employeeChoices, roleChoices);
   });
@@ -365,13 +365,13 @@ function promptEmployeeRole(employeeChoices, roleChoices) {
       {
         type: "list",
         name: "employeeId",
-        message: "Which employee do you want to set with the role?",
+        message: "Choose employee you want to set with the role.",
         choices: employeeChoices
       },
       {
         type: "list",
         name: "roleId",
-        message: "Which role do you want to update?",
+        message: "Choose role you want to update.",
         choices: roleChoices
       },
     ])
@@ -387,7 +387,7 @@ function promptEmployeeRole(employeeChoices, roleChoices) {
           if (err) throw err;
 
           console.table(res);
-          console.log(res.affectedRows + "Updated successfully!");
+          console.log(res.affectedRows + "Updated successfully.");
 
           firstPrompt();
         });
@@ -397,7 +397,7 @@ function promptEmployeeRole(employeeChoices, roleChoices) {
 
 
 
-//////////////////========================= 7."Add Role" / CREATE: INSERT INTO
+//======== 7."Add Role" / CREATE: INSERT INTO
 
 function addRole() {
 
@@ -419,7 +419,7 @@ function addRole() {
     }));
 
     console.table(res);
-    console.log("Department array!");
+    console.log("Department array.");
 
     promptAddRole(departmentChoices);
   });
@@ -459,7 +459,7 @@ function promptAddRole(departmentChoices) {
           if (err) throw err;
 
           console.table(res);
-          console.log("Role Inserted!");
+          console.log("Role Inserted.");
 
           firstPrompt();
         });
@@ -468,4 +468,4 @@ function promptAddRole(departmentChoices) {
 }
 
 
-//========================================= 8."Remove Role"
+//========."Remove Role"
