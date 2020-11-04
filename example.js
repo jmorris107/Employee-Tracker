@@ -113,7 +113,7 @@ function viewEmployee() {
     if (err) throw err;
 
     console.table(res);
-    console.log("Employees viewed!\n");
+    console.log("Employees viewed.\n");
 
     firstPrompt();
   });
@@ -149,7 +149,7 @@ function viewEmployeeByDepartment() {
     }));
 
     console.table(res);
-    console.log("Department view succeed!\n");
+    console.log("Department viewed.\n");
 
     promptDepartment(departmentChoices);
   });
@@ -430,6 +430,7 @@ function addRole() {
     FROM employee e
     JOIN role r
     ON e.role_id = r.id
+  
     JOIN department d
     ON d.id = r.department_id
     GROUP BY d.id, d.name`
