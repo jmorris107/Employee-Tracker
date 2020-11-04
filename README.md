@@ -51,10 +51,10 @@ Update employee roles
 🗳 <code>Node.js</code>,<code>npm install</code>,<code>npm install express</code>,<code> npm inquirer</code>,<code> npm start</code><code> console.table</code>
 
 # Usage
-💻 Open [Heroku](https://express-js-note-taker.herokuapp.com/) link, click "Get Started," enter the titled, enter text under the title, and then click save button at the top-tight corner of the page. If you want to delete the text, click trash can icon on the left. 
+💻 Open Terminal, write "node index.js" and choose what you want to do.
 
   
 # Links
-:octocat: Github [Repo](https://github.com/jmorris107/Express.js-Note-Taker.github.io) / [Account](https://github.com/)<br />
+:octocat: Github [Repo](https://github.com/jmorris107/Employee-Tracker.github.io#usage) / [Account](https://github.com/)<br />
 <br />
   
