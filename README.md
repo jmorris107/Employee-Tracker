@@ -1,13 +1,14 @@
 # Employee-Tracker
 
-![node badge](https://img.shields.io/badge/node-v12.19.0-green.svg)
-  ![repo size badge](https://img.shields.io/badge/reposize-57KB-blue.svg)
+  ![node badge](https://img.shields.io/badge/node-v12.19.0-green.svg)
+  ![repo size badge](https://img.shields.io/badge/reposize-3.35MB-blue.svg)
 
   ![Javascript badge](https://img.shields.io/badge/JavaScript-yellow.svg)
   ![jQuery badge](https://img.shields.io/badge/jQuery-blue.svg)
   ![node.js badge](https://img.shields.io/badge/node.js-green.svg)
   ![express.js](https://img.shields.io/badge/express.js-red.svg)
   ![json](https://img.shields.io/badge/json-orange.svg)
+  ![MySQL](https://img.shields.io/badge/mysql-orange.svg)
 
  
   
