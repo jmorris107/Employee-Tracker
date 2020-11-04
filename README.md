@@ -55,6 +55,6 @@ Update employee roles
 
   
 # Links
-:octocat: Github [Repo](https://github.com/jmorris107/Employee-Tracker.github.io#usage) / [Account](https://github.com/)<br />
+:octocat: Github [Repo](https://github.com/jmorris107/Employee-Tracker.github.io) / [Account](https://github.com/)<br />
 <br />
   
